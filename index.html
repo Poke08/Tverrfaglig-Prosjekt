@@ -1,11 +1,36 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hvordan Internett Fungerer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Hvordan Internett Fungerer</h1>
+        <p>Internett er et globalt nettverk av sammenkoblede datamaskiner som kommuniserer via protokoller som TCP/IP.</p>
+        
+        <h2>Kommunikasjon</h2>
+        <p>Internett brukes til å sende e-poster, chatte, ha videosamtaler og dele informasjon.</p>
+        
+        <h2>Lagring</h2>
+        <p>Data kan lagres på nettskytjenester som Google Drive, Dropbox og OneDrive.</p>
+        
+        <h2>Meld deg på vårt nyhetsbrev</h2>
+        <form id="newsletter-form">
+            <input type="email" id="email" placeholder="Skriv inn din e-post" required>
+            <button type="submit">Meld på</button>
+        </form>
+        <p id="newsletter-message"></p>
+        
+        <h2>Registrer dine favorittspill</h2>
+        <input type="text" id="game" placeholder="Skriv inn et spill du liker">
+        <button onclick="addGame()">Legg til</button>
+        <ul id="game-list"></ul>
+    </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
